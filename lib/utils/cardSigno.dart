@@ -3,9 +3,9 @@ import 'package:signos/pages/DetalheSigno.dart';
 
 class CardSigno extends StatelessWidget{
 
-  var _nome;
-  var _imagem;
-  var _dataSigno;
+  late String  _nome;
+  late String _imagem;
+  late Map _dataSigno;
 
   CardSigno(Map signo){
     this._nome = signo['Nome'];
@@ -29,7 +29,7 @@ class CardSigno extends StatelessWidget{
           SizedBox(height: 10),
 
           Text(
-              "$_nome", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold), textAlign: TextAlign.center
+              "$_nome", style: TextStyle(color:Colors.black54, fontSize: 18, fontWeight: FontWeight.bold), textAlign: TextAlign.center
           ),
 
           SizedBox(height: 10),
